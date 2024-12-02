@@ -1,0 +1,58 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Barlow+Semi+Condensed:wght@400;600;700&display=swap" rel="stylesheet">
+
+    <title>Rock Paper Scissors</title>
+</head>
+<body>
+    <header class="container">
+        <img src="Image/logo.svg" alt="logo">
+        <div class="score"> 
+            <p>SCORE</p>
+            <span id="update-score">11</span>
+        </div>
+    </header>
+    <div class="play-area">
+        <div>
+            <div id="player-choice" class="choice">
+                <ul>
+                    <li class="rock">
+                        <button><img src="Image/icon-rock.svg" alt="rock"></button>
+                    </li>
+                    <li class="paper">
+                        <button><img src="Image/icon-paper.svg" alt="paper"></button>
+                    </li>
+                    <li class="scissors">
+                        <button><img src="Image/icon-scissors.svg" alt="scissors"></button>
+                    </li>
+                </ul>
+            </div>
+            <div id="comp-choice" class="choice">THE HOUSE PICKED</div>  
+        </div>
+        <div class="bg-img">
+            <img src="Image/bg-triangle.svg" alt="">
+        
+    </div>
+    <section class="result">
+        <div>
+            <h1>YOU LOSE</h1>
+        </div>
+        <div>
+            <h1>YOU WIN</h1>
+        </div>
+        <div>
+            <button class="play-again">PLAY AGAIN</button>
+        </div>
+
+    </section>
+    <footer>
+        <a href="rules.html">RULES</a>
+    </footer>
+
+
+    <script src="main.js"></script>
+</body>
+</html>

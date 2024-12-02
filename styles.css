@@ -1,0 +1,133 @@
+*{
+    padding:0;
+    margin:0;
+    box-sizing: border-box;
+    font-family: 'Barlow Semi Condensed',sans-serif;
+}
+body{
+
+    background: linear-gradient(to bottom, hsl(214, 47%, 23%), hsl(237, 49%, 15%));
+    background-repeat: no-repeat;
+    background-position: 10%;
+    
+    background-repeat: no-repeat;
+}
+
+
+.container{
+    border: 3px solid hsl(217, 16%, 45%);
+    display:flex;
+    padding:15px;
+    justify-content: space-between;  
+    border-radius:5px;
+    position:relative;
+    top:25px;
+}
+.container img{
+    width:100px;
+}
+.score{
+    background-color: white;
+    border-radius: 4px;
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width:100px;
+    
+    
+}
+.score p{
+    color:hsl(229, 64%, 46%);
+    font-weight: 600;
+    font-size:13px;  
+    margin-top:10px;
+    
+}
+.score span{
+    font-size:3em;
+    color: hsl(229, 25%, 31%);
+    font-weight: bold;
+
+}
+.bg-img{
+    position:absolute;
+    top:250px;
+    left:90px;
+}
+.bg-img img{
+    width:200px;
+    height:200px;
+}
+ul li{
+    background: none;
+    border-radius:50%;
+    overflow:hidden;
+    width:130px;
+    height:130px;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    position:relative;
+    z-index:1;
+}
+ul li::before {
+    content: ''; /* Pseudo-element for the inner circle */
+    background-color: white; /* White inner portion */
+    border-radius: 50%;
+    width: 100px; /* Adjust the size to fit your design */
+    height: 100px;
+    position: absolute; /* Position it within the <li> */
+    z-index: 1; /* Ensure it appears above the gradient */
+}
+li button{
+    z-index:2;
+    border:none;
+    outline:none;
+    background: none;
+
+}
+.rock{
+    background: linear-gradient(to bottom, hsl(349, 71%, 52%), hsl(349, 70%, 56%));
+    position:relative;
+    top:225px;
+    left:123px;
+}
+.paper{
+    background: linear-gradient(to bottom,hsl(230, 89%, 62%), hsl(230, 89%, 65%));
+    position: relative;
+    top:-40px;
+    left:50px;
+}
+.scissors{
+    background: linear-gradient(to bottom,hsl(39, 89%, 49%), hsl(40, 84%, 53%));
+    position:relative;
+    top:-170px;
+    left:205px;
+}
+footer{
+    
+    border:2px solid white;
+    padding:10px;
+    color:white;
+    width:150px;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position:relative;
+    left:100px;
+    
+    
+}
+footer a{
+    text-decoration: none;
+    color: white;
+    font-weight: 600;
+    letter-spacing: 1.9px;
+}
+.hide{
+    display:none !important;
+}
+
+
